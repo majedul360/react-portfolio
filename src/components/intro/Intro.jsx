@@ -25,7 +25,7 @@ const Intro = () => {
           <h2>hi there, i'm</h2>
           <h1>majedul islam</h1>
           <h3>
-            freelancer <span ref={animText}></span>
+            developer <span ref={animText}></span>
           </h3>
           <a href="#portfolio">
             <FontAwesomeIcon className="arrow" icon={faAngleDown} />

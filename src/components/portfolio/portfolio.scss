@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap: 3.5rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
     .box {
       &:hover {
         .image .content {
