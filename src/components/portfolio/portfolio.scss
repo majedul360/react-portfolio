@@ -1,0 +1,52 @@
+.portfolio {
+  h2 {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .list {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 3.5rem;
+    margin-top: 4rem;
+    .box {
+      &:hover {
+        .image .content {
+          transform: scale(1);
+        }
+      }
+      .image {
+        position: relative;
+
+        img {
+          width: 100%;
+          border-radius: 2rem;
+        }
+
+        .content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(21, 2, 58, 0.9);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 2rem;
+          transform: scale(0);
+          transition: all 0.2s linear;
+          h3 {
+            color: white;
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}

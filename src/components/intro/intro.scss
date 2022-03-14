@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
-
+    position: relative;
     .box {
       flex: 1 1 39rem;
       .image {
@@ -48,10 +48,9 @@
       }
 
       .arrow {
-        position: relative;
-        bottom: -13rem;
-        left: 50%;
-        transform: translateX(-50%);
+        position: absolute;
+        bottom: 0;
+        left: 70%;
         font-size: 4rem;
         animation: arrowBlink 1.7s infinite;
       }
