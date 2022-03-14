@@ -4,18 +4,36 @@
   }
 
   .sections {
-    padding: 5rem 10%;
+    > * {
+      padding: 5rem 10%;
+    }
   }
 }
 // media quearies
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .app {
     .header {
       padding: 1.5rem 5%;
     }
 
     .sections {
-      padding: 5rem 5%;
+      > * {
+        padding: 5rem 5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .app {
+    .header {
+      padding: 1.5rem 3rem;
+    }
+
+    .sections {
+      > * {
+        padding: 5rem 3rem;
+      }
     }
   }
 }
@@ -26,7 +44,9 @@
     }
 
     .sections {
-      padding: 2rem;
+      > * {
+        padding: 2rem;
+      }
     }
   }
 }
