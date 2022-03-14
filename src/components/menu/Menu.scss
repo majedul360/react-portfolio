@@ -1,0 +1,30 @@
+.menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -35rem;
+  background: #15023a;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s linear;
+
+  &.active {
+    right: 0;
+  }
+  nav {
+    a {
+      display: block;
+      margin: 1.5rem 0;
+      font-size: 2.5rem;
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+      }
+    }
+  }
+}

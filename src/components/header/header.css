@@ -1,0 +1,93 @@
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.header .logo {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.header .contact {
+  margin-left: 10rem;
+}
+
+.header .contact a {
+  font-size: 1.7rem;
+  margin-right: 2rem;
+  color: black;
+}
+
+.header .contact a .icon {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.header .contact a span {
+  text-transform: none;
+}
+
+.header .hamburger {
+  width: 3rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.header .hamburger span {
+  width: 100%;
+  height: 0.3rem;
+  background-color: #15023a;
+}
+
+.header.active {
+  background: #15023a;
+}
+
+.header.active .logo,
+.header.active .contact a {
+  color: white;
+}
+
+.header.active .hamburger span {
+  background-color: white;
+}
+
+.header.active .hamburger span:nth-child(1) {
+  -webkit-transform: translateY(0.85rem) rotate(45deg);
+          transform: translateY(0.85rem) rotate(45deg);
+}
+
+.header.active .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.active .hamburger span:nth-child(3) {
+  -webkit-transform: translateY(-0.85rem) rotate(-45deg);
+          transform: translateY(-0.85rem) rotate(-45deg);
+}
+/*# sourceMappingURL=header.css.map */
