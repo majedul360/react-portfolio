@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 .app {
   .header {
     padding: 1.5rem 10%;
@@ -10,7 +12,7 @@
   }
 }
 // media quearies
-@media (max-width: 1024px) {
+@include device(1024px) {
   .app {
     .header {
       padding: 1.5rem 5%;
@@ -24,7 +26,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@include device(991px) {
   .app {
     .header {
       padding: 1.5rem 3rem;
@@ -37,7 +39,7 @@
     }
   }
 }
-@media (max-width: 450px) {
+@include device(450px) {
   .app {
     .header {
       padding: 1.5rem 2rem;

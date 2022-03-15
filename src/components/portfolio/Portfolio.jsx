@@ -8,6 +8,7 @@ import {
   designPortfolio,
   contentPortfolio,
 } from "../../data";
+const color = ["red", "yellow", "green", "black"];
 const list = [
   {
     id: "featured",
@@ -56,6 +57,7 @@ const Portfolio = () => {
         setData(featuredPortfolio);
     }
   }, [select]);
+
   return (
     <div className="portfolio" id="portfolio">
       <h2>portfolio</h2>

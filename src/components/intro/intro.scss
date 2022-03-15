@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .intro {
   .container {
     display: flex;
@@ -53,6 +54,10 @@
         left: 70%;
         font-size: 4rem;
         animation: arrowBlink 1.7s infinite;
+
+        @include device(450px) {
+          left: 85%;
+        }
       }
 
       @keyframes arrowBlink {
