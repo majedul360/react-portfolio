@@ -10,6 +10,16 @@ const Contact = () => {
       ? setIsSuccessfulMessage("Thanks, I'll reply ASAP!")
       : setIsSuccessfulMessage("Please fill up email and message field!");
 
+    const data = localStorage.getItem("data");
+    let dataObj;
+    if (data) {
+      dataObj = JSON.parse(data);
+    } else {
+      dataObj = {};
+    }
+    dataObj[email.current.value] = [message.current.value];
+    const dataStringify = JSON.stringify(dataObj);
+    localStorage.setItem("data", dataStringify);
     email.current.value = "";
     message.current.value = "";
   };
