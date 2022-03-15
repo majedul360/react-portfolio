@@ -1,1 +1,13 @@
+.testimonials {
+  h2 {
+    text-align: center;
+    font-size: 4rem;
+  }
 
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+}

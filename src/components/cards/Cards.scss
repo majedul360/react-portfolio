@@ -1,0 +1,64 @@
+@import "../../global.scss";
+
+.card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding: 3rem;
+  transition: all 0.2s linear;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:nth-child(1) {
+    margin: 3rem 0;
+    margin-right: 3rem;
+    @include device(450px) {
+      margin: 0;
+    }
+  }
+  &:nth-child(3) {
+    margin: 3rem 0;
+    margin-left: 3rem;
+    @include device(1024px) {
+      margin-left: 0;
+      margin-right: 3rem;
+    }
+    @include device(450px) {
+      margin: 0;
+    }
+  }
+  &.featured {
+    margin: 0;
+  }
+
+  .img-container {
+    text-align: center;
+    .icon {
+      width: 4rem;
+    }
+
+    .user {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      margin: 0 3rem;
+    }
+  }
+
+  p {
+    background-color: rgb(250, 244, 245);
+    font-size: 1.7rem;
+    margin: 3rem 0;
+    padding: 1rem;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  h4 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
